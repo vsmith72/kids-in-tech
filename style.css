@@ -604,7 +604,7 @@ a:active {
 # Accessibility
 --------------------------------------------------------------*/
 /* Text meant only for screen readers. */
-.screen-reader-text {
+.screen-reader-text {00000000001100
     clip: rect(1px, 1px, 1px, 1px);
     position: absolute !important;
     height: 1px;
@@ -723,4 +723,27 @@ a:active {
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
+}
+
+.site-footer {
+    background-color: #2a2c35;
+    color: white;
+    font-family: 'lato';
+    font-size: 17px;
+}
+
+.site-info {
+    width: 75%;
+    margin: auto;
+    padding: 10px;
+    border-top: 1px solid #575757;
+}
+.site-info p {
+    font-family: 'Lato';
+    color: 8d8d8d;
+    font-size: 15px;
+}
+
+.logo-footer {
+    width: 25%;
 }
