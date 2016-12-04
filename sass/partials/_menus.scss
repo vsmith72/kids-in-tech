@@ -1,0 +1,68 @@
+/* ! --------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+
+
+/* Header Menu   -----------------------------------*/
+
+.menu {
+    width: 100%;
+	ul {
+		list-style: none;
+		background-color: $content-bg;
+		text-align: center;
+		padding: 0;
+		margin: 0;
+	}
+	li {
+		line-height: 40px;
+		text-align: left;
+		li {
+			font-size: .8em;
+		}
+	}
+	a {
+		text-decoration: none;
+		color: #242021;
+		display: block;
+        padding-left: 30px;
+		padding-top: 60px;
+		cursor: pointer;
+		text-transform: uppercase;
+	}
+}
+@media screen and (min-width:650px) {
+	.menu {
+		li {
+			display: inline-block;
+			margin-right: -4px;
+			ul {
+				position: absolute;
+				display: none;
+				background-color: white;
+				box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+				min-width: 160px;
+				z-index: 1;
+				li {
+					a {
+						padding-top: 0;
+					}
+					display: block;
+				}
+			}
+			&:hover {
+				ul {
+					display: block;
+				}
+			}
+		}
+		>ul {
+			>li {
+				text-align: center;
+				>a {
+					padding-left: 0;
+				}
+			}
+		}
+	}
+}

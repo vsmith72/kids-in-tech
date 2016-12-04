@@ -26,6 +26,9 @@
     <header id="masthead" class="site-header" role="banner">
         <div class="site-branding">
             <a href="http://local.kids.dev"><img src="http://local.kids.dev/wp-content/themes/kids-in-tech/img/logo.png" alt="Kids in Tech" max-width="100%" /></a>
+            <br  />
+            <span class="motto">Excite. <span>Engage.</span> Educate.</span>
+
         </div><!-- .site-branding -->
 
         <nav id="site-navigation" class="main-navigation" role="navigation">

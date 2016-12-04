@@ -1,0 +1,134 @@
+/* !----------------------------------------------------------------
+# Hero Area
+-----------------------------------------------------------------*/
+
+.hero-area {
+    background: url("img/hero.jpg") center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    .hero-content{
+        float: right;
+        width: 55%;
+        margin: 0 auto;
+        padding-top: 2%;
+        padding-right: 3%;
+        color: $content-color;
+
+        text-align: right;
+        h1, p {
+            text-shadow: $image-txt-shadow;
+        }
+        p {
+            width: 75%;
+            float: right;
+        }
+    }
+    .hero-button {
+        float: right;
+        border: none;
+        padding: 2%;
+        background-color: $button-color;
+        font-family: $heading-font;
+        font-size: 20px;
+        color: $content-color;
+        text-transform: uppercase;
+        &:hover {
+            background-color: lighten($button-color, 6);
+        }
+    }
+
+}
+
+.summary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    text-align: center;
+}
+
+
+.impact-area {
+    background: url("img/circuts2.png") center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    p:first-child {
+        text-align: center;
+    }
+    .impact-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 95%;
+        margin: 0 auto;
+        li p {
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-left: 40px;
+        }
+        .num {
+            display: inline-block;
+            background-color: $brand-color;
+            margin-right : 10px;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            text-align: center;
+        }
+    }
+}
+
+.support-area {
+    p:first-child {
+        text-align: center;
+    }
+    .support-content {
+        ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        li {
+            text-align: center;
+            img, p{
+                width: 75%;
+                margin: auto;
+            }
+            p {
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+        }
+        h5 {
+            color: #222;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+    .support-button {
+        border: none;
+        padding: 2%;
+        background-color: $button-color;
+        font-family: $heading-font;
+        font-size: 14px;
+        color: $content-color;
+        text-transform: uppercase;
+
+        &:hover {
+            background-color: lighten($button-color, 6);
+            box-shadow: 2px 2px 5px 2px rgba(0,0,0, 0.25);
+        }
+    }
+}
+.success-area {
+    background: url("img/stories.jpg") center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height: 300px;
+    p:first-child {
+        text-align: center;
+    }
+}

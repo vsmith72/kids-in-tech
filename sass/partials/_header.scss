@@ -1,0 +1,30 @@
+/* ! --------------------------------------------------------------
+# Header
+---------------------------------------------------------------*/
+.site-header {
+	display: flex;
+	justify-content: space-between;
+}
+.site-branding {
+	width: 20%;
+    padding-left: 50px;
+	padding-top: 15px;
+	img {
+		width: 90%;
+	}
+    .motto {
+        display: block;
+        width: 90%;
+        color:$brand-color;
+        text-align: right;
+        span{
+            color: $brand2-color;
+        }
+    }
+}
+.main-navigation {
+	width: 60%;
+    .menu-primary-container {
+        width: 100%;
+    }
+}

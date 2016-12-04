@@ -1,0 +1,21 @@
+/*! --------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+a {
+	color: black;
+	&:visited {
+		color: #099eda;
+	}
+	&:hover {
+		color: #ef402f;
+		outline: 0;
+	}
+	&:focus {
+		color: #ef402f;
+		outline: thin dotted;
+	}
+	&:active {
+		color: #ef402f;
+		outline: 0;
+	}
+}

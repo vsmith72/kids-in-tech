@@ -1,0 +1,63 @@
+/* ! --------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat');
+
+
+$heading-font: 'Montserrat', sans-serif;
+$content-font: 'Lato', sans-serif;
+
+
+/* Setup the function for headings */
+@function headings($from:1, $to:6) {
+    @if $from == $to {
+        @return 'h#{$from}';
+    } @else {
+        @return 'h#{$from},' + headings($from+1, $to);
+    }
+}
+
+/* Then call it with the rules/styles you want wherever you want (As long as the file/include has access to the above function of course).*/
+#{headings(1,6)} {
+  font-family: $heading-font;
+  color: $heading-color;
+  text-transform: uppercase;
+}
+
+/* heading sizes */
+h1 {
+    font-size: 42px;
+}
+h2 {
+    font-size: 26px;
+}
+h3 {
+    font-size: 24px;
+}
+
+/* content text size */
+p {
+    font-size: 18px;
+    font-family: $content-font;
+}
+
+/* menu */
+.menu {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    color: $menu-color;
+}
+
+
+/* footer */
+.p-footer {
+    font-family: $content-font;
+    color: $content-color;
+    font-size: 17px;
+}
+
+.p-copy {
+    font-family: $content-font;
+    color: $copy-color;
+    font-size: 15px;
+}

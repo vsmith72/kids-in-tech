@@ -80,28 +80,34 @@ function kids_in_tech_content_width() {
 }
 add_action( 'after_setup_theme', 'kids_in_tech_content_width', 0 );
 
-/**
- * Register widget area.
- *
- * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
- */
-function kids_in_tech_widgets_init() {
-    register_sidebar( array(
-        'name'          => esc_html__( 'Sidebar', 'kids-in-tech' ),
-        'id'            => 'sidebar-1',
-        'description'   => esc_html__( 'Add widgets here.', 'kids-in-tech' ),
-        'before_widget' => '<section id="%1$s" class="widget %2$s">',
-        'after_widget'  => '</section>',
-        'before_title'  => '<h2 class="widget-title">',
-        'after_title'   => '</h2>',
-    ) );
+
+// Register Sidebars
+function kids_custom_sidebars() {
+
+	$args = array(
+		'id'            => 'student',
+		'class'         => 'student-sidebar',
+		'name'          => __( 'Student Stories', 'kids_in_tech' ),
+		'description'   => __( 'student success stories', 'kids_in_tech' ),
+	);
+	register_sidebar( $args );
+
+	$args = array(
+		'id'            => 'newsletter',
+		'class'         => 'newsletter-sidebar',
+		'name'          => __( 'Newsletter Sidebar', 'kids_in_tech' ),
+		'description'   => __( 'newsletter sidebar', 'kids_in_tech' ),
+	);
+	register_sidebar( $args );
+
 }
-add_action( 'widgets_init', 'kids_in_tech_widgets_init' );
+add_action( 'widgets_init', 'kids_custom_sidebars' );
 
 /**
  * Enqueue scripts and styles.
  */
 function kids_in_tech_scripts() {
+    wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/scss/vendors/font-awesome/scss/font-awesome.css');
     wp_enqueue_style( 'kids-in-tech-style', get_stylesheet_uri() );
 
     wp_enqueue_script( 'kids-in-tech-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
