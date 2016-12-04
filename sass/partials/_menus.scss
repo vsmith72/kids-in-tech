@@ -66,3 +66,51 @@
 		}
 	}
 }
+
+/* Social Menu */
+
+.social-navigation {
+
+    ul {
+        margin: 0;
+        padding: 0;
+        padding-bottom: 10px;
+    }
+    li {
+        display: inline-block;
+    }
+    a {
+        padding: 10px;
+        text-align: center;
+        color: $brand-color;
+    }
+    .fa-circle{
+        border: 1px solid $brand-color;
+        border-radius: 50%;
+        color: $footer-bg;
+    }
+
+}
+
+/* Footer Menu */
+.footer-menu-container{
+    width: 90%;
+}
+.footer-navigation{
+    ul {
+        list-style-type: none;
+        margin: 0 auto;
+        padding: 0;
+        width: 250px;
+    }
+
+    li {
+        line-height: 35px;
+    }
+    a {
+        display: block;
+        color: #fff;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+}

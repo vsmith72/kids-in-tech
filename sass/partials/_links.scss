@@ -2,7 +2,7 @@
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: black;
+    color: $brand-color;
 	&:visited {
 		color: #099eda;
 	}
@@ -12,7 +12,6 @@ a {
 	}
 	&:focus {
 		color: #ef402f;
-		outline: thin dotted;
 	}
 	&:active {
 		color: #ef402f;

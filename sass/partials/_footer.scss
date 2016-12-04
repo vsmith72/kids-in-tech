@@ -2,22 +2,66 @@
 ## Footer
 ------------------------------------------------------------------*/
 .site-footer {
+    width: 100%;
 	background-color: #2a2c35;
 	color: white;
 	font-family: 'lato';
 	font-size: 17px;
 }
-.site-info {
-	width: 75%;
-	margin: auto;
+.footer-content {
+    width: 75%;
+	margin: 20px auto;
 	padding: 10px;
+
+.footer-logo {
+    float: left;
+    width: 60%;
+    img {
+    	width: 35%;
+    }
+
+}
+.footer-navigation {
+    float: right;
+    width: 40%;
+}
+.site-info {
+    padding: 10px 0 0 0;
 	border-top: 1px solid #575757;
 	p {
 		font-family: 'Lato';
 		color: #8d8d8d;
-		font-size: 15px;
+		font-size: 13px;
 	}
 }
-.logo-footer {
-	width: 25%;
+}
+.foot-sidebar {
+    background-color: $brand-color;
+    padding: 20px;
+    .widgettitle {
+        display: none;
+    }
+    form {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        label {
+            padding-right: 25px;
+            font-family: 'Lato';
+            font-size: 18px;
+        }
+    }
+}
+.newsletter-input {
+    margin-right: 10px;
+}
+.newsletter-button {
+    padding: 5px 30px;
+    border: none;
+    background-color: $footer-bg;
+    text-transform: lowercase;
+    &:hover {
+        background-color: lighten($footer-bg, .06);
+        box-shadow: 2px 2px 5px 2px rgba(0,0,0, 0.25);
+    }
 }

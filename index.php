@@ -89,8 +89,44 @@ get_header(); ?>
             </div>
             <div class="success-area clear">
                 <p>student success stories</p>
-                <div class="success-content">
-
+                    <section class="rw-wrapper clear">
+                    		<div class="rw-words">
+                                <?php query_posts('post_type=student_story');?>
+                                <?php
+                                while (have_posts()) : the_post();
+                                    //set up variables student stories
+                                    $student= get_field('student');
+                                    $testimonial = get_field('testimonial');
+                                ?>
+                                <span>
+                                    <p class="student-testimonial">
+                                        <?php echo $testimonial; ?>
+                                    </p>
+                                    <p class="student-name">&mdash;<?php echo $student; ?></p>
+                                </span>
+                                <?php endwhile; wp_reset_query(); ?>
+                    		</div>
+                    </section>
+            </div>
+            <div class="impact2-area">
+                <p>
+                    the impact of kids in tech
+                </p>
+                <div class="impact2-content">
+                    <ul>
+                        <li>
+                            <h5>1,200</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </li>
+                        <li>
+                            <h5>$10,000</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </li>
+                        <li>
+                            <h5>91%</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </main><!-- #main -->
