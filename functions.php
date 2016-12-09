@@ -108,7 +108,7 @@ add_action( 'widgets_init', 'kids_custom_sidebars' );
  * Enqueue scripts and styles.
  */
 function kids_in_tech_scripts() {
-    wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/scss/vendors/font-awesome/scss/font-awesome.css');
+    wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/sass/vendors/font-awesome/scss/font-awesome.css');
     wp_enqueue_style( 'kids-in-tech-style', get_stylesheet_uri() );
 
     wp_enqueue_script( 'kids-in-tech-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );

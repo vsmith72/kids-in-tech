@@ -64,7 +64,7 @@
                    <?php if(intval($year) < date('Y')){ echo intval($year) . ' - ' . date('Y'); } ?>
                    <?php if(intval($year) > date('Y')){ echo date('Y'); } ?>
                 <?php } ?>
-                &copy;<?php auto_copyright('2016');  // 2010 - 2011 ?> Kids in Tech
+                &copy;<?php auto_copyright('2016');  // 2010 - 2011 ?> Kids in Tech All Rights Reserved.
                 <span class="sep">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
                 Website Design by <a href="https://www.anphira.com/" rel="designer">Anphira</a>
                 <span class="sep">&nbsp;&nbsp;|&nbsp;&nbsp;</span>

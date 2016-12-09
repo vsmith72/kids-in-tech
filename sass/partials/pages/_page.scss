@@ -1,0 +1,10 @@
+
+.entry-content {
+    color:$content2-color;
+    width: 75%;
+    margin: 0 auto;
+}
+.entry-title {
+    @extend .entry-content;
+    margin-top: 2%;
+}

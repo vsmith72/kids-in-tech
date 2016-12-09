@@ -14,17 +14,6 @@
 
 get_header(); ?>
 
-    <div id="primary" class="content-area">
-        <main id="main" class="site-main" role="main">
-            <div class="hero-area">
-                <div class="hero-content clear">
-                    <h1>Invest in Future Tech Leaders</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                    <button class="hero-button">Join the Movement</button>
-                </div>
-            </div>
             <div class="summary">
                 <p>
                     Kids in tech connects student with volunteers resulting in powerful connections that...
@@ -35,7 +24,7 @@ get_header(); ?>
                     our programs impact the community
                 </p>
                 <div class="impact-content">
-
+                    <!-- TODO: change link when live -->
                     <span><img class="img-shadow img-radius" src="http://local.kids.dev/wp-content/themes/kids-in-tech/img/teacher-student.jpg" max-width="100%" alt="Our programs impact the community" />
                     </span>
                     <span>
@@ -67,22 +56,26 @@ get_header(); ?>
                 <div class="support-content">
                     <ul>
                         <li>
+                            <!-- TODO: Make this content dynamic  -->
                             <h5>volunteer</h5>
-                            <img src="http://local.kids.dev/wp-content/themes/kids-in-tech/img/volunteer.jpg" max-width="100%" />
+                            <img class="img-shadow img-radius"  src="http://local.kids.dev/wp-content/themes/kids-in-tech/img/volunteer.jpg" max-width="100%" />
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <button class="support-button" type="button">learn more</button>
+                            <!-- TODO: change link when live -->
+                            <button class="support-button" type="button"><a href="local.kids.dev/volunteer">learn more</a></button>
                         </li>
                         <li>
                             <h5>donate</h5>
-                            <img src="http://local.kids.dev/wp-content/themes/kids-in-tech/img/donate.jpg" max-width="100%" />
+                            <img class="img-shadow img-radius" src="http://local.kids.dev/wp-content/themes/kids-in-tech/img/donate.jpg" max-width="100%" />
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <button class="support-button" type="button">learn more</button>
+                            <!-- TODO: change link when live -->
+                            <button class="support-button" type="button"><a href="local.kids.dev/donate">learn more</a></button>
                         </li>
                         <li>
                             <h5>advocate</h5>
-                            <img src="http://local.kids.dev/wp-content/themes/kids-in-tech/img/advocate.jpg" max-width="100%" />
+                            <img class="img-shadow img-radius" src="http://local.kids.dev/wp-content/themes/kids-in-tech/img/advocate.jpg" max-width="100%" />
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <button class="support-button" type="button">learn more</button>
+                            <!-- TODO: change link when live -->
+                            <button class="support-button" type="button"><a href="local.kids.dev/advocate">learn more</a></button>
                         </li>
                     </ul>
                 </div>

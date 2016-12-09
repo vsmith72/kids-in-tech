@@ -1,0 +1,41 @@
+.volunteer-content {
+    background: url('img/volunteer2.jpg') center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    color: white;
+    display: flex;
+    align-items: left;
+    padding-left: 4%;
+    text-shadow: $image-txt-shadow;
+    letter-spacing: 1.5px;
+    input, textarea {
+        background-color: rgba(255,255,255, 0.7);
+    }
+    input[type='button'] {
+        width: 50% !important;
+        border: none !important;
+        border-radius: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+        background: $brand2-color !important;
+        color: $content-color;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+}
+
+
+.ninja-forms-req-symbol,
+.nf-error-msg, {
+    color: $brand2-color !important;
+}
+.nf-error {
+    .ninja-forms-field {
+        border: 1px solid $brand2-color !important;
+    }
+}
+.nf-form-fields-required {
+    font-size: .05em !important;
+    padding-bottom: 1%;
+}
