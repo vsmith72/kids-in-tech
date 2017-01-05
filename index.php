@@ -16,12 +16,12 @@ get_header(); ?>
 
             <div class="summary">
                 <p>
-                    Kids in tech connects student with volunteers resulting in powerful connections that...
+                    We excite, educate, and empower children to use technology, promoting a positive environment, and fostering lifelong interest through our afterschool programming.
                 </p>
             </div>
             <div class="impact-area clear">
                 <p>
-                    our programs impact the community
+                    Our Program Impacts the Community
                 </p>
                 <div class="impact-content">
                     <!-- TODO: change link when live -->
@@ -30,21 +30,15 @@ get_header(); ?>
                     <span>
                         <ul>
                             <li>
-                                <h3><span class="num">1</span>Program 2</h3>
+                                <h3><span class="num">1</span>Impact 1</h3>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.
+
                                 </p>
                             </li>
                             <li>
-                                <h3><span class="num">2</span>Program 2</h3>
+                                <h3><span class="num">2</span>Impact 2</h3>
                                 <p>
                                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                </p>
-                            </li>
-                            <li>
-                                <h3><span class="num">3</span>Program 3</h3>
-                                <p>
-                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo pariatur.
                                 </p>
                             </li>
                         </ul>
@@ -70,13 +64,6 @@ get_header(); ?>
                             <!-- TODO: change link when live -->
                             <button class="support-button" type="button"><a href="local.kids.dev/donate">learn more</a></button>
                         </li>
-                        <li>
-                            <h5>advocate</h5>
-                            <img class="img-shadow img-radius" src="http://local.kids.dev/wp-content/themes/kids-in-tech/img/advocate.jpg" max-width="100%" />
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <!-- TODO: change link when live -->
-                            <button class="support-button" type="button"><a href="local.kids.dev/advocate">learn more</a></button>
-                        </li>
                     </ul>
                 </div>
             </div>
@@ -84,20 +71,37 @@ get_header(); ?>
                 <p>student success stories</p>
                     <section class="rw-wrapper clear">
                     		<div class="rw-words">
-                                <?php query_posts('post_type=student_story');?>
                                 <?php
-                                while (have_posts()) : the_post();
+                                    $args = array(
+                                        	'numberposts'	=> -1,
+                                        	'post_type'		=> 'testimonial',
+                                        	'meta_query'	=> array(
+                                        		'relation'		=> 'AND',
+                                        		array(
+                                        			'key'		=> 'type',
+                                        			'value'		=> 'student',
+                                        			'compare'	=> '='
+                                        		)
+                                            )
+                                        );
+                                        $the_query = new WP_Query( $args );
+                                ?>
+                                <?php if( $the_query->have_posts() ): ?>
+                                <?php while ( $the_query->have_posts() ) : $the_query->the_post();
                                     //set up variables student stories
-                                    $student= get_field('student');
+                                    $name= get_field('name');
                                     $testimonial = get_field('testimonial');
                                 ?>
                                 <span>
                                     <p class="student-testimonial">
                                         <?php echo $testimonial; ?>
                                     </p>
-                                    <p class="student-name">&mdash;<?php echo $student; ?></p>
+                                    <p class="student-name">&mdash;<?php echo $name; ?></p>
                                 </span>
-                                <?php endwhile; wp_reset_query(); ?>
+                                <?php endwhile; ?>
+                            <?php endif; ?>
+
+                            <?php wp_reset_query();	?>
                     		</div>
                     </section>
             </div>
