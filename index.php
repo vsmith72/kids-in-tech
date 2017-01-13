@@ -14,16 +14,16 @@
 
 get_header(); ?>
 
-            <div class="summary">
-                <p>
+            <div class="summary clear">
+                <h3>
                     We excite, educate, and empower children to use technology, promoting a positive environment, and fostering lifelong interest through our afterschool programming.
-                </p>
+                </h3>
             </div>
             <div class="impact-area clear">
-                <p>
+                <h3>
                     Our Program Impacts the Community
-                </p>
-                <div class="impact-content">
+                </h3>
+                <div class="impact-content clear">
                     <!-- TODO: change link when live -->
                     <span><img class="img-shadow img-radius" src="http://local.kids.dev/wp-content/themes/kids-in-tech/img/teacher-student.jpg" max-width="100%" alt="Our programs impact the community" />
                     </span>
@@ -32,13 +32,13 @@ get_header(); ?>
                             <li>
                                 <h3><span class="num">1</span>Impact 1</h3>
                                 <p>
-
+                                    Computer science isn’t just about learning technology, it’s about logic, problem solving, and creativity. When kids better understand the origins and implications of technology, they’ll gain a greater sense of responsibility and respect for what’s possible in today’s world.
                                 </p>
                             </li>
                             <li>
                                 <h3><span class="num">2</span>Impact 2</h3>
                                 <p>
-                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    Kids in Tech provides critical technology education for kids and youth in afterschool programs.
                                 </p>
                             </li>
                         </ul>
@@ -46,21 +46,21 @@ get_header(); ?>
                 </div>
             </div>
             <div class="support-area clear">
-                <p>how you can support kids in tech</p>
+                <h3>How you can help Kids in Tech</h3>
                 <div class="support-content">
                     <ul>
                         <li>
                             <!-- TODO: Make this content dynamic  -->
                             <h5>volunteer</h5>
                             <img class="img-shadow img-radius"  src="http://local.kids.dev/wp-content/themes/kids-in-tech/img/volunteer.jpg" max-width="100%" />
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p>We rely on volunteers to bring our programs to life. Find out how you can get involved today - no technology experience required! </p>
                             <!-- TODO: change link when live -->
                             <button class="support-button" type="button"><a href="local.kids.dev/volunteer">learn more</a></button>
                         </li>
                         <li>
                             <h5>donate</h5>
                             <img class="img-shadow img-radius" src="http://local.kids.dev/wp-content/themes/kids-in-tech/img/donate.jpg" max-width="100%" />
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p>Donors like you keep us running with both financial contributions and in-kind donations. </p>
                             <!-- TODO: change link when live -->
                             <button class="support-button" type="button"><a href="local.kids.dev/donate">learn more</a></button>
                         </li>
@@ -68,7 +68,7 @@ get_header(); ?>
                 </div>
             </div>
             <div class="success-area clear">
-                <p>student success stories</p>
+                <h3>student success stories</h3>
                     <section class="rw-wrapper clear">
                     		<div class="rw-words">
                                 <?php
@@ -105,23 +105,23 @@ get_header(); ?>
                     		</div>
                     </section>
             </div>
-            <div class="impact2-area">
-                <p>
-                    the impact of kids in tech
-                </p>
+            <div class="impact2-area clear">
+                <h3>
+                    I believe that participating in Kids in Tech has helped me with
+                </h3>
                 <div class="impact2-content">
                     <ul>
                         <li>
-                            <h5>1,200</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <h4>90%</h4>
+                            <p>Spend more time doing homework</p>
                         </li>
                         <li>
-                            <h5>$10,000</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <h4>95%</h4>
+                            <p>Imporved their technology skills and school greads</p>
                         </li>
                         <li>
-                            <h5>91%</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <h4>98%</h4>
+                            <p>Try harder in school</p>
                         </li>
                     </ul>
                 </div>

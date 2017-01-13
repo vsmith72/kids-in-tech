@@ -2,8 +2,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100px;
+    //min-height: 100px;
     text-align: center;
+    h3 {
+        color: $brand-color;
+        text-transform: none;
+        width: 75%;
+
+    }
 }
 
 
@@ -12,18 +18,27 @@
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
-    height: 475px;
-    p:first-child {
+    //min-height: 575px;
+    h3{
         text-align: center;
     }
     .impact-content {
         display: flex;
         justify-content: center;
-        align-items: center;
         width: 95%;
-        margin: 0 auto;
+        margin: 2% auto;
+        h3{
+            text-align: left;
+        }
+        span {
+            width: 50%;
+        }
         img{
             width: 100%;
+            vertical-align: text-top;
+        }
+        ul {
+            margin-left: 2%;
         }
         li p {
             margin-top: 0;
@@ -43,24 +58,30 @@
 }
 
 .support-area, .impact2-area {
-    p:first-child {
+    h3:first-child {
+        color: $brand-color;
+        text-align: center;
+    }
+    h4 {
+        color: $content2-color;
         text-align: center;
     }
     .support-content, .impact2-content{
+
         ul {
             display: flex;
             justify-content: space-around;
-            align-items: center;
         }
         li {
+            width: 50%;
             text-align: center;
             img, p{
-                width: 75%;
-                margin: auto;
+                //width: 75%;
+                //margin: auto;
             }
             p {
-                margin-top: 5px;
-                margin-bottom: 5px;
+                padding: 0 8%;
+
             }
         }
         h5 {
@@ -97,7 +118,7 @@
     p {
         text-shadow: $image-txt-shadow;
     }
-    p:first-child {
+    h3:first-child {
         text-align: center;
     }
 }
@@ -122,12 +143,18 @@
     overflow: hidden;
     width: 100%;
     color: $content-color;
-    animation: rotateWord 18s linear infinite 0s;
   }
 }
 
-
-.rw-words span {
+@for $i from 1 through 10 {
+    .rw-words span {
+        animation: rotateWord 27s linear infinite 0s;
+        &:nth-of-type(#{$i}) {
+           animation-delay:$i * 3s;
+        }
+    }
+}
+/*.rw-words span {
   &:nth-child(2) {
     animation-delay: 3s;
     color: $content-color;
@@ -148,14 +175,22 @@
     animation-delay: 15s;
     color: $content-color;
   }
-}
+  &:nth-child(7) {
+    animation-delay: 18s;
+    color: $content-color;
+  }
+}*/
 
 @keyframes rotateWord {
     0% { opacity: 0; }
-    2% { opacity: 0; -webkit-transform: translateY(-30px); transform: translateY(-30px); }
-	5% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px);}
-    17% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px); }
-	20% { opacity: 0; -webkit-transform: translateY(30px); transform: translateY(30px); }
+    2% { opacity: 0;
+        transform: translateY(-30px); }
+	5% { opacity: 1;
+        transform: translateY(0px);}
+    17% { opacity: 1;
+        transform: translateY(0px); }
+	20% { opacity: 0;
+        transform: translateY(30px); }
 	80% { opacity: 0; }
     100% { opacity: 0; }
 }

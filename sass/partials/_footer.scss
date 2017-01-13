@@ -38,11 +38,12 @@
 .foot-sidebar {
     background-color: $brand-color;
     padding: 20px;
+    line-height: 2em;
     .widgettitle {
         display: none;
     }
     form {
-        width: 80%;
+        width: 65%;
         margin: 0 auto;
         text-align: center;
         label {

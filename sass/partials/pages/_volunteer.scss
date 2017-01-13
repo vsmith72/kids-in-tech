@@ -23,6 +23,11 @@
         font-size: 18px;
         text-transform: uppercase;
     }
+
+    &:active {
+        outline: 0;
+        border: none;
+    }
 }
 
 

@@ -21,31 +21,22 @@
             <div class="clear">
                 <div class="footer-logo">
                     <img src="http://local.kids.dev/wp-content/themes/kids-in-tech/img/footer-logo.png" alt="Kids in Tech" max-width="100%" />
-                    <p>A little bit about the organzation should go here. Nothing much just a litle bit of something.</p>
+                    <p>AFostering computer literacy and Inspiring youth to pursue advanced computer science activities</p>
                     <span class="social-navigation clear">
                         <ul>
                             <li>
                                 <a href="https://facebook.com/kidsintech1" target="_blank">
-                                    <span class="fa-stack fa-lg">
-                                      <i class="fa fa-circle fa-stack-2x"></i>
-                                      <i class="fa fa-facebook fa-stack-1x"></i>
-                                    </span>
+                                      <i class="fa fa-facebook fa-2x"></i>
                                 </a>
                             </li>
                             <li>
                                 <a href="https://twitter.com/kids_in_tech1"  target="_blank">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-twitter fa-stack-1x"></i>
-                                    </span>
+                                        <i class="fa fa-twitter fa-2x"></i>
                                 </a>
                             </li>
                             <li>
                                 <a href="https://instagram.com/kids_in_tech1"  target="_blank">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-1x"></i>
-                                        <i class="fa fa-instagram fa-stack-1x"></i>
-                                    </span>
+                                        <i class="fa fa-instagram fa-2x"></i>
                                 </a>
                             </li>
                         </ul>

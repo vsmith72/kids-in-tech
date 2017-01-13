@@ -34,13 +34,6 @@ get_header('volunteer'); ?>
                             <!-- TODO: change link when live -->
                             <button class="support-button" type="button"><a href="local.kids.dev/donate">learn more</a></button>
                         </li>
-                        <li>
-                            <h5>advocate</h5>
-                            <img class="img-shadow img-radius" src="http://local.kids.dev/wp-content/themes/kids-in-tech/img/advocate.jpg" max-width="100%" />
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <!-- TODO: change link when live -->
-                            <button class="support-button" type="button"><a href="local.kids.dev/advocate">learn more</a></button>
-                        </li>
                     </ul>
                 </div>
             </div>
