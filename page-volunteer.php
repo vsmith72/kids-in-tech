@@ -15,58 +15,63 @@
 
 get_header('volunteer'); ?>
 
-            <div class="support-area clear">
-                <p>how you can support kids in tech</p>
-                <div class="support-content">
-                    <ul>
-                        <li>
-                            <!-- TODO: Make this content dynamic  -->
-                            <h5>volunteer</h5>
-                            <img class="img-shadow img-radius"  src="http://local.kids.dev/wp-content/themes/kids-in-tech/img/volunteer.jpg" max-width="100%" />
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <!-- TODO: change link when live -->
-                            <button class="support-button" type="button"><a href="local.kids.dev/volunteer">learn more</a></button>
-                        </li>
-                        <li>
-                            <h5>donate</h5>
-                            <img class="img-shadow img-radius" src="http://local.kids.dev/wp-content/themes/kids-in-tech/img/donate.jpg" max-width="100%" />
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <!-- TODO: change link when live -->
-                            <button class="support-button" type="button"><a href="local.kids.dev/donate">learn more</a></button>
-                        </li>
-                    </ul>
-                </div>
+<div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
+
+        <?php
+        while ( have_posts() ) : the_post();
+
+            get_template_part( 'template-parts/content', 'page' );
+
+
+        endwhile; // End of the loop.
+        ?>
+        <?php wp_reset_query(); ?>
+        <!--<div class="success-area clear">
+            <h3>student success stories</h3>
+                <section class="rw-wrapper clear">
+                        <div class="rw-words">
+                            <?php
+                                $args = array(
+                                        'numberposts'	=> -1,
+                                        'post_type'		=> 'testimonial',
+                                        'meta_query'	=> array(
+                                            'relation'		=> 'AND',
+                                            array(
+                                                'key'		=> 'type',
+                                                'value'		=> 'volunteer',
+                                                'compare'	=> '='
+                                            )
+                                        )
+                                    );
+                                    $the_query = new WP_Query( $args );
+                            ?>
+                            <?php if( $the_query->have_posts() ): ?>
+                            <?php while ( $the_query->have_posts() ) : $the_query->the_post();
+                                //set up variables student stories
+                                $name= get_field('name');
+                                $testimonial = get_field('testimonial');
+                            ?>
+                            <span>
+                                <p class="student-testimonial">
+                                    <?php echo $testimonial; ?>
+                                </p>
+                                <p class="student-name">&mdash;<?php echo $name; ?></p>
+                            </span>
+                            <?php endwhile; ?>
+                        <?php endif; ?>
+
+                        <?php wp_reset_query();	?>
+                        </div>
+                </section>
+        </div> -->
+        <div id="volunteer-content" class="volunteer-content clear">
+            <div class="volunteer-form-layout">
+                <?php echo do_shortcode("[ninja_form id=2]"); ?>
             </div>
-            <!-- <div class="success-area clear">
-                <p>student success stories</p>
-                    <section class="rw-wrapper clear">
-                    		<div class="rw-words">
-                                <?php query_posts('post_type=student_story');?>
-                                <?php
-                                while (have_posts()) : the_post();
-                                    //set up variables student stories
-                                    $student= get_field('student');
-                                    $testimonial = get_field('testimonial');
-                                ?>
-                                <span>
-                                    <p class="student-testimonial">
-                                        <?php echo $testimonial; ?>
-                                    </p>
-                                    <p class="student-name">&mdash;<?php echo $student; ?></p>
-                                </span>
-                                <?php endwhile; wp_reset_query(); ?>
-                    		</div>
-                    </section>
-                </div> -->
-                <div id="volunteer-content" class="volunteer-content clear">
-
-                        <?php echo do_shortcode("[ninja_form id=2]"); ?>
-
-                </div>
-
+        </div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();

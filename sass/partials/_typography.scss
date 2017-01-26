@@ -21,6 +21,7 @@ $content-font: 'Lato', sans-serif;
 #{headings(1,6)} {
   font-family: $heading-font;
   color: $heading-color;
+  letter-spacing: .09em;
   text-transform: uppercase;
 }
 
@@ -32,11 +33,12 @@ h2 {
     font-size: 26px;
 }
 h3 {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 /* content text size */
 p {
+    margin: .5em 0;
     font-size: 18px;
     font-family: $content-font;
 }

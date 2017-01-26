@@ -20,7 +20,7 @@
         <div class="footer-content">
             <div class="clear">
                 <div class="footer-logo">
-                    <img src="http://local.kids.dev/wp-content/themes/kids-in-tech/img/footer-logo.png" alt="Kids in Tech" max-width="100%" />
+                    <img src="http://local.kids.dev/wp-content/themes/kids-in-tech/img/footer-logo-tm.png" alt="Kids in Tech" max-width="100%" />
                     <p>AFostering computer literacy and Inspiring youth to pursue advanced computer science activities</p>
                     <span class="social-navigation clear">
                         <ul>

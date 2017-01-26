@@ -15,7 +15,8 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
-
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
 <?php wp_head(); ?>
 </head>
 
@@ -26,7 +27,7 @@
     <header id="masthead" class="site-header" role="banner">
         <div class="site-branding">
             <!-- TODO: change link when live -->
-            <a href="<?php echo bloginfo('url'); ?>"><img src="http://local.kids.dev/wp-content/themes/kids-in-tech/img/logo.png" alt="Kids in Tech" max-width="100%" /></a>
+            <a href="<?php echo bloginfo('url'); ?>"><img src="http://local.kids.dev/wp-content/themes/kids-in-tech/img/logo-tm.png" alt="Kids in Tech" max-width="100%" /></a>
             <br  />
             <span class="motto">Excite. <span>Engage.</span> Educate.</span>
 
@@ -48,7 +49,7 @@
                                 Creating the next generation of technology-savvy leaders through afterschool educational programs for kids and advancing computer literacy for all. Find out how to bring Kids in Tech to your program:
                             </p>
                             <!-- TODO: change link when live -->
-                            <button class="hero-button"><a href="http://local.kids.dev/take-action/">Join the Movement</a></button>
+                            <button class="hero-button"><a href="http://local.kids.dev/get-involved/">Join the Movement</a></button>
                         </div>
 
                     </div>

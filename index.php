@@ -25,7 +25,7 @@ get_header(); ?>
                 </h3>
                 <div class="impact-content clear">
                     <!-- TODO: change link when live -->
-                    <span><img class="img-shadow img-radius" src="http://local.kids.dev/wp-content/themes/kids-in-tech/img/teacher-student.jpg" max-width="100%" alt="Our programs impact the community" />
+                    <span style="text-align:center;"><img class="img-shadow img-radius" src="http://local.kids.dev/wp-content/themes/kids-in-tech/img/teacher-student.jpg" max-width="100%" alt="Our programs impact the community" />
                     </span>
                     <span>
                         <ul>

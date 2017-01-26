@@ -1,7 +1,61 @@
-ul{
+ul, li{
     list-style: none;
     -webkit-padding-start: 0;
 }
+/* fontawesome list-style */
 li {
-    list-style: none;
+    position: relative;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    /*replace the content value with the
+    corresponding value from the list below*/
+    &:before {
+        position: absolute;
+        left: 0;
+        content: '\f101';
+        font-family: 'FontAwesome';
+
+    /*--adjust as necessary--*/
+        color: $brand-color;
+        font-size: 18px;
+        padding-right: 0.5em;
+        left: 0;
+    }
+}
+/* how it works section - what we do page */
+.how-it-works {
+    background-color: $brand-color;
+    ul {
+        text-align: center;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    li {
+        display: inline-block;
+        width: 150px;
+        text-align: center;
+        padding: 0;
+        &:nth-child(even){
+            width:30px;
+        }
+        &:before {
+            content: " ";
+        }
+
+        .fa {
+            color: $content-color;
+            font-size: 18px;
+            padding-right: 0.5em;
+            padding-left: 0.5em;
+            position: relative;
+            top: -95px;
+        }
+    }
+
+    li:last-child {
+        &:after{
+            content: " ";
+        }
+    }
 }

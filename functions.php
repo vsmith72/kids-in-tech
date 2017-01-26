@@ -268,3 +268,7 @@ function program_updated_messages( $messages ) {
     return $messages;
 }
 add_filter( 'post_updated_messages', 'program_updated_messages' );
+
+/* remove the auto p for posts and pages */
+remove_filter ('the_content', 'wpautop');
+remove_filter ('the_excerpt', 'wpautop');

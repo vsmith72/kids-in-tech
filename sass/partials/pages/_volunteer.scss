@@ -6,7 +6,7 @@
     color: white;
     display: flex;
     align-items: left;
-    padding-left: 4%;
+    padding-left: 10%;
     text-shadow: $image-txt-shadow;
     letter-spacing: 1.5px;
     input, textarea {
@@ -29,18 +29,78 @@
         border: none;
     }
 }
+.volunteer-landing {
+    h5 {
+        color: $content2-color;
+    }
+    ul {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+    li {
+        position: static;
+        padding:0;
+        &:before {
+            content: " ";
+        }
+    }
+    h3 {
+        text-align: center;
+        color: $brand-color;
+    }
+    p {
+        padding: 0 8%;
 
-
-.ninja-forms-req-symbol,
-.nf-error-msg, {
-    color: $brand2-color !important;
-}
-.nf-error {
-    .ninja-forms-field {
-        border: 1px solid $brand2-color !important;
     }
 }
-.nf-form-fields-required {
-    font-size: .05em !important;
-    padding-bottom: 1%;
+
+.vol-journey {
+    font-size: 20px;
+    h3 {
+        background: $brand-color;
+        padding: 20px;
+        color: $content-color;
+        letter-spacing: 5px;
+    }
+    span {
+        color: $brand-color;
+        display: inline;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    .one-half {
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        float: left;
+        width: 48%;
+        height: 200px;
+        margin-bottom: 40px;
+    }
+    .two-half {
+        float: right;
+        background: linear-gradient(to left, $brand-color, $content-color);
+        min-height: 200px;
+        width: 48%;
+        margin-bottom: 40px;
+
+    }
+    .left {
+        float: left;
+        background: linear-gradient(to left, $content-color, $brand-color);
+    }
+    .clr {
+        clear: right;
+    }
+    .vol-testimonial {
+        background-color: $brand-color;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        color: $content-color;
+        letter-spacing: .09em;
+        margin-bottom: 40px;
+        clear: both;
+    }
 }

@@ -25,3 +25,40 @@
 .press-message {
     font-size: .85em;
 }
+
+/* volunteer form */
+.volunteer-form-layout {
+    width: 70%;
+    padding-right:20px;
+}
+.ninja-forms-req-symbol,
+.nf-error-msg, {
+    color: $brand2-color !important;
+}
+.nf-error {
+    .ninja-forms-field {
+        border: 1px solid $brand2-color !important;
+    }
+}
+.nf-form-fields-required {
+    font-size: .05em !important;
+    padding-bottom: 1%;
+}
+.nf-field-element {
+    li {
+        position: static;
+        padding: 0;
+        &:before {
+            content: " ";
+        }
+    }
+}
+
+/* Total Donations */
+#migla_donation_form .migla-panel-heading h2 {
+    color: $brand-color !important;
+}
+ul.mg_nav-tabs li a {
+    color: $brand-color !important;
+    text-transform: uppercase;
+}
