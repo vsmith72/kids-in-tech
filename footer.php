@@ -21,7 +21,7 @@
             <div class="clear">
                 <div class="footer-logo">
                     <img src="http://local.kids.dev/wp-content/themes/kids-in-tech/img/footer-logo-tm.png" alt="Kids in Tech" max-width="100%" />
-                    <p>AFostering computer literacy and Inspiring youth to pursue advanced computer science activities</p>
+                    <p>Fostering computer literacy and Inspiring youth to pursue advanced computer science activities</p>
                     <span class="social-navigation clear">
                         <ul>
                             <li>
@@ -66,7 +66,18 @@
 
     </footer><!-- #colophon -->
 </div><!-- #page -->
+<!-- Start Google Analytics Code -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-90920703-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics Code -->
 <?php wp_footer(); ?>
 
 </body>

@@ -18,7 +18,7 @@
         display: block;
         width: 90%;
         color:$brand-color;
-        text-align: right;
+        padding-bottom: 5px;
         span{
             color: $brand2-color;
         }
@@ -30,7 +30,13 @@
         width: 100%;
     }
 }
-
+@media screen and (min-width:1025px) {
+    .site-branding {
+        .motto {
+            font-size: 22px;
+        }
+    }
+}
 /* !----------------------------------------------------------------
 # Hero Area
 -----------------------------------------------------------------*/
@@ -41,6 +47,7 @@
     background-size: cover;
     min-height: 550px;
     .hero-content{
+
         float: right;
         width: 60%;
         margin: 0 auto;
@@ -53,14 +60,19 @@
             text-shadow: $image-txt-shadow;
         }
         p {
+
             width: 75%;
             float: right;
+            padding-bottom: 25px;
+            font-size: 1.75em;
+            letter-spacing: .05em;
+            font-weight: 900;
         }
     }
     .hero-button {
         float: right;
         border: none;
-        padding: 2%;
+        padding: 1%;
         background-color: $button-color;
         font-family: $heading-font;
         font-size: 20px;
@@ -78,6 +90,7 @@
     }
 
 }
+
 /* !----------------------------------------------------------------
 # Hero Area Volunteer Header Only
 -----------------------------------------------------------------*/

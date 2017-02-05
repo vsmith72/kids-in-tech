@@ -107,7 +107,7 @@ get_header(); ?>
             </div>
             <div class="impact2-area clear">
                 <h3>
-                    I believe that participating in Kids in Tech has helped me with
+                    Kids in Tech Programming Boosts Academic Performance
                 </h3>
                 <div class="impact2-content">
                     <ul>
@@ -117,7 +117,7 @@ get_header(); ?>
                         </li>
                         <li>
                             <h4>95%</h4>
-                            <p>Imporved their technology skills and school greads</p>
+                            <p>Improved their technology skills and school grades</p>
                         </li>
                         <li>
                             <h4>98%</h4>

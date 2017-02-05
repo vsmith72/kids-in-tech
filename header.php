@@ -44,9 +44,9 @@
 
                     <div class="hero-area">
                         <div class="hero-content clear">
-                            <h1>Inspire, Connect, Educate, Create</h1>
+                            <h1>Inspire, Connect <!--, Educate-->, Create</h1>
                             <p>
-                                Creating the next generation of technology-savvy leaders through afterschool educational programs for kids and advancing computer literacy for all. Find out how to bring Kids in Tech to your program:
+                                Creating the next generation of technology-savvy leaders through afterschool educational programs for kids and advancing computer literacy for all. Find out how to bring Kids in Tech to your program
                             </p>
                             <!-- TODO: change link when live -->
                             <button class="hero-button"><a href="http://local.kids.dev/get-involved/">Join the Movement</a></button>
