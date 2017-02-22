@@ -23,7 +23,35 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
     <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'kids-in-tech' ); ?></a>
-
+    <div class="header-social color-bar">
+            <ul>
+                <li>
+                    <a href="https://facebook.com/kidsintech1" target="_blank">
+                          <i class="fa fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/kids_in_tech1"  target="_blank">
+                            <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://instagram.com/kids_in_tech1"  target="_blank">
+                            <i class="fa fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UChQLLgdysBxpF-2HHLEE3tg"  target="_blank">
+                            <i class="fa fa-youtube-play"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://medium.com/@kidsintech1"  target="_blank">
+                            <i class="fa fa-medium"></i>
+                    </a>
+                </li>
+            </ul>
+    </div>
     <header id="masthead" class="site-header" role="banner">
         <div class="site-branding">
             <!-- TODO: change link when live -->
