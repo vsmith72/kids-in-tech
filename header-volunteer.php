@@ -55,7 +55,7 @@
     <header id="masthead" class="site-header" role="banner">
         <div class="site-branding">
             <!-- TODO: change link when live -->
-            <a href="<?php echo bloginfo('url'); ?>"><img src="http://local.kids.dev/wp-content/themes/kids-in-tech/img/logo-tm.png" alt="Kids in Tech" max-width="100%" /></a>
+            <a href="<?php echo bloginfo('url'); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-tm.png" alt="Kids in Tech" max-width="100%" /></a>
             <br  />
             <span class="motto">Excite. <span>Engage.</span> Educate.</span>
 
@@ -75,7 +75,7 @@
                             <h1>join us in helping kids</h1>
 
                             <!-- TODO: change link when live -->
-                            <button class="hero-button"><a href="http://local.kids.dev/get-involved#volunteer-content">Join the Movement</a></button>
+                            <button class="hero-button"><a href="<?php echo bloginfo('url'); ?>/get-involved#volunteer-content">Join the Movement</a></button>
                         </div>
 
                     </div>

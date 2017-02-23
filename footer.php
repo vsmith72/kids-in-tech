@@ -20,9 +20,9 @@
         <div class="footer-content">
             <div class="clear">
                 <div class="footer-logo">
-                    <img src="http://local.kids.dev/wp-content/themes/kids-in-tech/img/footer-logo-tm.png" alt="Kids in Tech" max-width="100%" />
-                    <p>Fostering computer literacy and Inspiring youth to pursue advanced computer science activities</p>
-                    <span class="social-navigation clear">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/footer-logo-tm.png" alt="Kids in Tech" max-width="100%" />
+                    <p>Fostering computer literacy and inspiring youth to pursue advanced computer science activities</p>
+                    <span class="footer-social clear">
                         <ul>
                             <li>
                                 <a href="https://facebook.com/kidsintech1" target="_blank">
@@ -37,6 +37,16 @@
                             <li>
                                 <a href="https://instagram.com/kids_in_tech1"  target="_blank">
                                         <i class="fa fa-instagram fa-2x"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UChQLLgdysBxpF-2HHLEE3tg"  target="_blank">
+                                        <i class="fa fa-youtube-play fa-2x"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://medium.com/@kidsintech1"  target="_blank">
+                                        <i class="fa fa-medium fa-2x"></i>
                                 </a>
                             </li>
                         </ul>
@@ -55,7 +65,7 @@
                    <?php if(intval($year) < date('Y')){ echo intval($year) . ' - ' . date('Y'); } ?>
                    <?php if(intval($year) > date('Y')){ echo date('Y'); } ?>
                 <?php } ?>
-                &copy;<?php auto_copyright('2016');  // 2010 - 2011 ?> Kids in Tech All Rights Reserved.
+                &copy;<?php auto_copyright('2016');  // 2010 - 2011 ?> Kids in Tech, Inc. All Rights Reserved.
                 <span class="sep">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
                 Website Design by <a href="https://www.anphira.com/" rel="designer">Anphira</a>
                 <span class="sep">&nbsp;&nbsp;|&nbsp;&nbsp;</span>

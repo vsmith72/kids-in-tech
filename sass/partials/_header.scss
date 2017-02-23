@@ -1,6 +1,12 @@
 /* ! --------------------------------------------------------------
 # Header
 ---------------------------------------------------------------*/
+.color-bar {
+    width: 100%;
+    background: #2a2c35;
+    margin-top: -10px;
+    padding: 5px;
+}
 .site-header {
 	display: flex;
 	justify-content: space-between;
@@ -10,7 +16,7 @@
 .site-branding {
 	width: 20%;
     //padding-left: 50px;
-	padding-top: 15px;
+    padding-top: 10px;
 	img {
 		width: 90%;
 	}
@@ -19,6 +25,8 @@
         width: 90%;
         color:$brand-color;
         padding-bottom: 5px;
+        font-size: 14px;
+
         span{
             color: $brand2-color;
         }
@@ -33,7 +41,7 @@
 @media screen and (min-width:1025px) {
     .site-branding {
         .motto {
-            font-size: 22px;
+            font-size: 16px;
         }
     }
 }
@@ -46,6 +54,11 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 550px;
+    .overlay {
+        background: rgba(0,0,0,.4);
+        width: 100%;
+        min-height: 550px;
+    }
     .hero-content{
 
         float: right;
@@ -64,9 +77,10 @@
             width: 75%;
             float: right;
             padding-bottom: 25px;
-            font-size: 1.75em;
+            font-size: 1.25em;
             letter-spacing: .05em;
             font-weight: 900;
+            text-align: justify;
         }
     }
     .hero-button {
@@ -101,7 +115,7 @@
     background: url("img/hero2.jpg") center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
+    height: 300px;
     text-align: center;
     .hero-content{
         margin: 0 auto;

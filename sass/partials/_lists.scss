@@ -3,7 +3,7 @@ ul, li{
     -webkit-padding-start: 0;
 }
 /* fontawesome list-style */
-li {
+ul li {
     position: relative;
     padding-left: 20px;
     padding-bottom: 10px;
@@ -22,9 +22,17 @@ li {
         left: 0;
     }
 }
-/* how it works section - what we do page */
+
+/* order lists */
+ol {
+    li {
+        list-style: decimal;
+        padding-bottom: 10px;
+    }
+}
+/* how it works section - what we do page
 .how-it-works {
-    background-color: $brand-color;
+
     ul {
         text-align: center;
         width: 100%;
@@ -58,4 +66,4 @@ li {
             content: " ";
         }
     }
-}
+}*/

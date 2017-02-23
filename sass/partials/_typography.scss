@@ -27,16 +27,19 @@ $content-font: 'Lato', sans-serif;
 
 /* heading sizes */
 h1 {
-    font-size: 32px;
+    font-size: 28px;
 }
 h2 {
-    font-size: 26px;
+    font-size: 24px;
 }
 h3 {
     font-size: 20px;
 }
 
 /* content text size */
+html {
+    font-size: 18px;
+}
 p {
     margin: .5em 0;
     font-size: 18px;
@@ -62,4 +65,9 @@ p {
     font-family: $content-font;
     color: $copy-color;
     font-size: 15px;
+}
+em {
+    font-weight: 900;
+    letter-spacing: .09em;
+    color: $brand-color;
 }

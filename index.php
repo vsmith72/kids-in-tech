@@ -53,17 +53,17 @@ get_header(); ?>
                         <li>
                             <!-- TODO: Make this content dynamic  -->
                             <h5>volunteer</h5>
-                            <img class="img-shadow img-radius"  src="http://local.kids.dev/wp-content/themes/kids-in-tech/img/volunteer.jpg" max-width="100%" />
+                            <img class="img-shadow img-radius"  src="<?php echo get_stylesheet_directory_uri(); ?>img/volunteer.jpg" max-width="100%" />
                             <p>We rely on volunteers to bring our programs to life. Find out how you can get involved today!</p>
                             <!-- TODO: change link when live -->
-                            <button class="support-button" type="button"><a href="local.kids.dev/volunteer">learn more</a></button>
+                            <button class="support-button" type="button"><a href="<?php echo bloginfo('url'); ?>/volunteer">learn more</a></button>
                         </li>
                         <li>
                             <h5>donate</h5>
-                            <img class="img-shadow img-radius" src="http://local.kids.dev/wp-content/themes/kids-in-tech/img/donate.jpg" max-width="100%" />
+                            <img class="img-shadow img-radius" src="<?php echo get_stylesheet_directory_uri(); ?>/img/donate.jpg" max-width="100%" />
                             <p>Donors like you keep us running with both financial contributions and in-kind donations.</p>
                             <!-- TODO: change link when live -->
-                            <button class="support-button" type="button"><a href="local.kids.dev/donate">learn more</a></button>
+                            <button class="support-button" type="button"><a href="<?php echo bloginfo('url'); ?>/donate">learn more</a></button>
                         </li>
                     </ul>
                 </div>

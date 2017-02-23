@@ -87,45 +87,71 @@
 	}
 }
 
+
+
+
 /* Social Menu */
 
 .social-navigation {
+    ul {
+        list-style: none;
 
-ul {
-    list-style: none;
-
-     li {
-        position: static;
-
-        display: inline-block;
-        margin-right: 15px; // space between circles
-        padding: 0;
-        border-radius: 50%;
-        border: 2px solid $brand-color;
-        cursor: pointer;
-        &:before{
-            content: " ";
-        }
-        a {
-          color: $brand-color;
-          display: table-cell;
-          vertical-align: middle;
-          text-align: center;
-          text-decoration: none;
-
-      // icon size is controlled by class="icon-5x"
-      // below is to control the circle sizes
-      height: 50px;
-      width: 50px;
-
-      &:hover, &:active {
-        color: $brand2-color;
-        text-decoration: none;
-      }
+         li {
+            position: static;
+            display: inline-block;
+            margin-right: 15px; // space between circles
+            padding: 0;
+            border-radius: 50%;
+            border: 2px solid $brand-color;
+            cursor: pointer;
+            &:before{
+                content: " ";
+            }
+            a {
+              color: $brand-color;
+              display: table-cell;
+              vertical-align: middle;
+              text-align: center;
+              text-decoration: none;
+              &:hover, &:active {
+                color: $brand2-color;
+                text-decoration: none;
+              }
+            }
+          }
     }
-  }
 }
 
+/* Social Menu Header */
+
+.header-social {
+    @extend .social-navigation;
+    text-align: right;
+    width: 95%;
+    margin: auto;
+    clear: both;
+    ul {
+        margin: 10px 0 0 0;
+    }
+    li {
+        border: none !important;
+    }
+    li a{
+        height: 25px;
+        width: 25px;
+    }
+}
+
+/* Social Menu Footer */
+
+.footer-social {
+    @extend .social-navigation;
+    ul li a {
+    // icon size is controlled by class="icon-5x"
+    // below is to control the circle sizes
+    height: 50px;
+    width: 50px;
+    }
 }
 
 /* Footer Menu */

@@ -69,30 +69,7 @@
         letter-spacing: 1px;
         text-transform: uppercase;
     }
-    .one-half {
-        box-sizing: border-box;
-        display: flex;
-        align-items: center;
-        float: left;
-        width: 48%;
-        height: 200px;
-        margin-bottom: 40px;
-    }
-    .two-half {
-        float: right;
-        background: linear-gradient(to left, $brand-color, $content-color);
-        min-height: 200px;
-        width: 48%;
-        margin-bottom: 40px;
-
-    }
-    .left {
-        float: left;
-        background: linear-gradient(to left, $content-color, $brand-color);
-    }
-    .clr {
-        clear: right;
-    }
+    
     .vol-testimonial {
         background-color: $brand-color;
         padding: 20px;

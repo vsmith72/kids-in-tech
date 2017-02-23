@@ -67,6 +67,7 @@
 }
 
 .support-area, .impact2-area {
+
     h3:first-child {
         color: $brand-color;
         text-align: center;
@@ -125,7 +126,13 @@
     }
 }
 .success-area {
-    background: url("img/stories.jpg") center;
+    .overlay {
+        background: rgba(0,0,0,.4);
+        width: 100%;
+        min-height: 100%;
+        margin-top: -20px;
+    }
+    background: url("img/smiles.jpg") center;
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -135,6 +142,7 @@
     }
     h3:first-child {
         text-align: center;
+        padding-top: 20px;
     }
 }
 
